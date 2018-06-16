@@ -248,6 +248,11 @@ enum CastVote
 // The first team that's game specific (i.e. not unassigned / spectator)
 #define FIRST_GAME_TEAM			(LAST_SHARED_TEAM+1)
 
+//ChromeAngel
+#define TEAM_RED    FIRST_GAME_TEAM
+#define TEAM_BLUE   FIRST_GAME_TEAM + 1
+#define TEAM_COUNT  TEAM_BLUE + 1
+
 #define MAX_TEAMS				32	// Max number of teams in a game
 #define MAX_TEAM_NAME_LENGTH	32	// Max length of a team's name
 

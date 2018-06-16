@@ -30,7 +30,7 @@
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
-
+/*
 void Host_Say( edict_t *pEdict, bool teamonly );
 
 ConVar sv_motd_unload_on_dismissal( "sv_motd_unload_on_dismissal", "0", 0, "If enabled, the MOTD contents will be unloaded when the player closes the MOTD." );
@@ -76,7 +76,7 @@ void FinishClientPutInServer( CHL2MP_Player *pPlayer )
 
 	data->deleteThis();
 }
-
+*/
 /*
 ===========
 ClientPutInServer
@@ -84,6 +84,7 @@ ClientPutInServer
 called each time a player is spawned into the game
 ============
 */
+/*
 void ClientPutInServer( edict_t *pEdict, const char *playername )
 {
 	// Allocate a CBaseTFPlayer for pev, and call spawn
@@ -100,7 +101,7 @@ void ClientActive( edict_t *pEdict, bool bLoadGame )
 	CHL2MP_Player *pPlayer = ToHL2MPPlayer( CBaseEntity::Instance( pEdict ) );
 	FinishClientPutInServer( pPlayer );
 }
-
+*/
 
 /*
 ===============
@@ -109,6 +110,7 @@ const char *GetGameDescription()
 Returns the descriptive name of this .dll.  E.g., Half-Life, or Team Fortress 2
 ===============
 */
+/*
 const char *GetGameDescription()
 {
 	if ( g_pGameRules ) // this function may be called before the world has spawned, and the game rules initialized
@@ -198,4 +200,4 @@ void InstallGameRules()
 	// vanilla deathmatch
 	CreateGameRulesObject( "CHL2MPRules" );
 }
-
+*/

@@ -1764,7 +1764,8 @@ void KeyValues::CopyKeyValuesFromRecursive( const KeyValues& rootSrc )
 	KeyValues* localDst = NULL;
 
 	CUtlQueue<CopyStruct> nodeQ;
-	nodeQ.Insert({ this, &rootSrc });
+	CopyStruct junk = { this, &rootSrc };
+	nodeQ.Insert(junk);
 
 	while ( nodeQ.Count() > 0 ) 
 	{
@@ -1781,7 +1782,8 @@ void KeyValues::CopyKeyValuesFromRecursive( const KeyValues& rootSrc )
 			// Add children to the queue to process later. 
 			if (cs.src->m_pSub) {
 				cs.dst->m_pSub = localDst = new KeyValues( NULL );
-				nodeQ.Insert({ localDst, cs.src->m_pSub });
+				CopyStruct junk2 = { localDst, cs.src->m_pSub };
+				nodeQ.Insert(junk2);
 			}
 
 			// Process siblings until we hit the end of the line. 

@@ -1,1 +1,1 @@
-devtools\bin\vpc.exe /hl2mp /2010 +game /mksln TFF.sln
+devtools\bin\vpc.exe /hl2mp /2010 /define:VS2010 +game /mksln TFF.sln

@@ -54,3 +54,11 @@ config.cfg
 # shader files
 *.tmp
 
+src/TFF.VC.db
+src/TFF.VC.db
+src/TFF.VC.db
+src/TFF.VC.db
+/src/game/server/Debug_mod_hl2mp
+/src/game/server/Release_mod_hl2mp
+/src/game/client/Debug_mod_hl2mp
+/src/game/client/Release_mod_hl2mp

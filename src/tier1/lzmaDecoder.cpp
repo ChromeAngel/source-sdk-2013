@@ -138,7 +138,12 @@ bool CLZMAStream::CreateDecoderState( const unsigned char *pProperties )
 		FreeDecoderState();
 	}
 
+#pragma warning(disable: 4345)
+
 	m_pDecoderState = new CLzmaDec();
+
+	//was throwing warning C4345
+//#pragma warning(enable: 4345)
 
 	LzmaDec_Construct( m_pDecoderState );
 	if ( LzmaDec_Allocate( m_pDecoderState, pProperties, LZMA_PROPS_SIZE, &g_Alloc) != SZ_OK )

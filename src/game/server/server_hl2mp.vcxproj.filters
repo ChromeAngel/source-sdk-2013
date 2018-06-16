@@ -40,6 +40,15 @@
     <Filter Include="VPC Scripts">
       <UniqueIdentifier>{A40EE377-781A-C6B9-0C7C-B3BE118D248E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\TFF">
+      <UniqueIdentifier>{9f6f77c6-752c-4e18-a102-dc7f8f2d75ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared Files">
+      <UniqueIdentifier>{6770d0ca-2757-44d7-944d-d8f15aadefef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TFF\Map Entities">
+      <UniqueIdentifier>{42b4624a-daa3-4f40-ad82-7dd994ed5aca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\..\lib\public\choreoobjects.lib">
@@ -1826,6 +1835,90 @@
     <ClInclude Include="toolframework_server.h">
       <Filter>Tools Framework</Filter>
     </ClInclude>
+    <ClInclude Include="..\shared\tff\tff_game_rules.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_team_entity.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_base_payload_path.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_control_point.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_flag.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_flag_point.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_func_spawn.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_head_museum.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_payload.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_payload_path_curve_left.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_payload_path_curve_right.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_payload_path_ramp_down.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_payload_path_ramp_up.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_payload_path_start.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_payload_path_straight.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_payload_path_terminus.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_payload_path_veer_left.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_payload_path_veer_right.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_payload_path_waypoint.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_pickup.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_rules.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_team.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="tff\tff_team_base.h">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\tff_player.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\tff\tff_stat.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\tff\tff_hero.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\tff\tff_stat_stack.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\tff\tff_team_manager.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gamedll_replay.cpp">
@@ -3556,8 +3649,93 @@
     <ClCompile Include="toolframework_server.cpp">
       <Filter>Tools Framework</Filter>
     </ClCompile>
+    <ClCompile Include="..\shared\tff\tff_game_rules.cpp">
+      <Filter>Shared Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_base_payload_path.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_control_point.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_flag.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_flag_point.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_func_spawn.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_head_museum.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_payload.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_payload_path_curve_left.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_payload_path_curve_right.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_payload_path_ramp_down.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_payload_path_ramp_up.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_payload_path_start.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_payload_path_straight.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_payload_path_terminus.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_payload_path_veer_left.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_payload_path_veer_right.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_payload_path_waypoint.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_pickup.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_rules.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_team.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_team_base.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_team_entity.cpp">
+      <Filter>Source Files\TFF\Map Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="tff_player.cpp">
+      <Filter>Source Files\TFF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\tff\tff_base_hero.cpp">
+      <Filter>Shared Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\tff\tff_hero_manager.cpp">
+      <Filter>Shared Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\tff\tff_stat_stack.cpp">
+      <Filter>Shared Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tff\tff_client.cpp">
+      <Filter>Source Files\TFF</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\public\tier0\pointeroverride.asm">

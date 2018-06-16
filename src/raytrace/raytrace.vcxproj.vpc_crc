@@ -1,6 +1,6 @@
 [vpc crc file version 2]
 b9c20ec3 X:\mods\tff\source-sdk-2013\src\devtools\bin\vpc.exe
-_Nc_VS2010/vpcgame:hl2mp_
+_Nc_/define:vs2010VS2010/vpcgame:hl2mp_
 407e2c20 raytrace.vpc
 30577f77 ..\vpc_scripts\source_lib_base.vpc
 d752cf80 ..\vpc_scripts\platform_dirs.vpc
